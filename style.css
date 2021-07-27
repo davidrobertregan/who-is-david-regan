@@ -29,6 +29,7 @@ header::after {
     padding: 10px;
     text-transform: uppercase;
     color: whitesmoke;
+    font-size: 40px;
 }
 
 #contact {
@@ -48,7 +49,7 @@ nav ul {
 nav li {
     display: inline-block;
     margin-left: 70px;
-    padding-top: 20px;
+    padding-top: 25px;
 
     position: relative;
 }
@@ -83,7 +84,7 @@ nav a:hover::before {
 
 
 #tagline {
-    padding: 100px 100px;
+    padding: 125px 125px;
     text-align: center;
 }
 
@@ -99,10 +100,12 @@ nav a:hover::before {
 }
 
 .logo {
-    width: 15%;
+    width: 20%;
     position: relative;
-    float: right;
-    bottom: 50px;
+}
+
+#flatiron {
+    width: 35%;
 }
 
 .section {
@@ -126,13 +129,14 @@ nav a:hover::before {
 
 .centered {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: darkblue;
-    font-weight: bold;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: xx-large;
 }
-   
+
 .section {
     text-align: left;
     padding: 20% 20% 20% 20%;
