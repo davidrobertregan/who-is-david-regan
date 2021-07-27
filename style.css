@@ -1,65 +1,104 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     margin: 0 auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav {
-    width: 100%;
-}
-
-nav ul {
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-}
-
-nav li {
-    display: block;
-    padding: 8px;
-    float: left;
-}
-
-li a {
-    color: white;
-    text-decoration: none;
-}
-
-li a:hover {
-    color: rgb(49, 145, 100);
-}
-#contact {
-    background: darkblue;
-    position: fixed;
-    top: 40px;
-    right: 10px;
-    width: 20%;
-    padding: 8px;
-}
-
-.top {
-    background: lightgray;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 header {
-    padding: 50px 50px;
+    background-color: #4D4D56;
 }
 
-header h1 {
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container h1 {
+    float: left;
+    margin: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+#contact {
+    font-weight: bold;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 20px;
+
+    position: relative;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #50B0E1;
+}
+
+nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #50B0E1;
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+
+
+#tagline {
+    padding: 100px 100px;
+    text-align: center;
+}
+
+#tagline h1 {
     font-size: 80px;
 }
 
-header p {
+#tagline p {
     font-size: 30px;
     font-style: italic;
     position: relative;
     bottom: 40px;
 }
 
-.headerimg {
+.logo {
     width: 15%;
     position: relative;
     float: right;
@@ -92,4 +131,9 @@ header p {
     transform: translate(-50%,-50%);
     color: darkblue;
     font-weight: bold;
+}
+   
+.section {
+    text-align: left;
+    padding: 20% 20% 20% 20%;
 }
