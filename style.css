@@ -1,7 +1,95 @@
 body {
-    background: white;
+    width: 100%;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
+nav {
+    width: 100%;
+}
+
+nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+nav li {
+    display: block;
+    padding: 8px;
+    float: left;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: rgb(49, 145, 100);
+}
+#contact {
+    background: darkblue;
+    position: fixed;
+    top: 40px;
+    right: 10px;
+    width: 20%;
+    padding: 8px;
+}
+
+.top {
+    background: lightgray;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+header {
+    padding: 50px 50px;
+}
+
+header h1 {
+    font-size: 80px;
+}
+
+header p {
+    font-size: 30px;
+    font-style: italic;
+    position: relative;
+    bottom: 40px;
+}
+
+.headerimg {
+    width: 15%;
+    position: relative;
+    float: right;
+    bottom: 50px;
+}
+
+.section {
+    padding: 20px 20px 20px 20px;
+}
+
+.column {
+    position: relative;
+    text-align: center;
+    color: white;
+    float: left;
+    width: 32%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.centered {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: darkblue;
+    font-weight: bold;
 }
