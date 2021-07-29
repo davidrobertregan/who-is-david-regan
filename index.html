@@ -55,8 +55,8 @@
         </div>
         <div class="column">
             <a href="#whosdave">
-                <img src="Dave and Sard.JPG" width="100%">
-                <div class="centered">Who's Dave?</div>
+                <img id="dave-sara" src="Dave and Sard.JPG" width="100%">
+                <div class="hide" class="centered">Who's Dave?</div>
             </a>
         </div>
         <div class="column">
@@ -75,9 +75,55 @@
         <h1>Who's Dave</h1>
         <p>Scruggs' career began at age 21 when he was hired to play in Bill Monroe's band, the Blue Grass Boys. The name "bluegrass" eventually became the eponym for the entire genre of country music now known by that title. Despite considerable success with Monroe, performing on the Grand Ole Opry and recording classic hits such as "Blue Moon of Kentucky", Scruggs resigned from the group in 1946 due to their exhausting touring schedule. Fellow band member Lester Flatt resigned as well, and he and Scruggs later paired up in a new group they called Flatt and Scruggs and the Foggy Mountain Boys. Scruggs' banjo instrumental called "Foggy Mountain Breakdown", released in 1949, became an enduring hit, and had a rebirth of popularity to a younger generation when it was featured in the 1967 film Bonnie and Clyde. The song won two Grammy Awards and, in 2005, was selected for the Library of Congress' National Recording Registry of works of unusual merit.</p>
     </div>
-    <div id="fun" class="section">
+    <div id="fun" class="section"> 
+
         <h1>Fun</h1>
         <p>Scruggs' career began at age 21 when he was hired to play in Bill Monroe's band, the Blue Grass Boys. The name "bluegrass" eventually became the eponym for the entire genre of country music now known by that title. Despite considerable success with Monroe, performing on the Grand Ole Opry and recording classic hits such as "Blue Moon of Kentucky", Scruggs resigned from the group in 1946 due to their exhausting touring schedule. Fellow band member Lester Flatt resigned as well, and he and Scruggs later paired up in a new group they called Flatt and Scruggs and the Foggy Mountain Boys. Scruggs' banjo instrumental called "Foggy Mountain Breakdown", released in 1949, became an enduring hit, and had a rebirth of popularity to a younger generation when it was featured in the 1967 film Bonnie and Clyde. The song won two Grammy Awards and, in 2005, was selected for the Library of Congress' National Recording Registry of works of unusual merit.</p>
+       
+       <!--JavaScript--> 
+
+        <div id="buttons">
+            <h2 id="up"></h2>
+                <button onclick="addUltra()">Ultrarunning
+                </button>
+                <button onclick="addBanjo()">
+                    Banjo
+                </button>
+                <button onclick="addMountains()">Mountains</button>
+            <div></div>
+
+
+<!--JS won't work properly when linked from script.js-->
+            <script>
+
+        const up = document.getElementById('up');  
+          
+        function addBanjo() {
+            const banjo = document.createElement('img');
+            banjo.src = "Banjo.JPG";
+            banjo.style.width = "400px";
+            document.getElementById('buttons').appendChild(banjo);
+        } 
+
+        function addUltra() {
+            const rocky = document.createElement('img');
+            rocky.src = "Rocky-50.JPG";
+            rocky.style.width = "400px";
+            document.getElementById('buttons').appendChild(rocky);
+        }
+
+        function addMountains() {
+            const middle = document.createElement('img');
+            middle.src ="middle.jpeg";
+// How can i add a link to image?...  middle.setAttribute("href", "https://www.strava.com/activities/5676545097");
+            middle.style.width="400px";
+
+            document.getElementById('buttons').appendChild(middle);
+        }
+            </script>
+        </div>
     </div>
+
 </body>
+
 </html>

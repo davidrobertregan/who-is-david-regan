@@ -101,7 +101,7 @@ nav a:hover::before {
 
 .logo {
     width: 20%;
-    position: relative;
+    position: absolute;
 }
 
 #flatiron {
@@ -119,6 +119,10 @@ nav a:hover::before {
     float: left;
     width: 32%;
     padding: 5px;
+} 
+
+.row {
+    position: relative;
 }
 
 .row::after {
@@ -135,9 +139,62 @@ nav a:hover::before {
     color: whitesmoke;
     font-weight: bolder;
     font-size: xx-large;
+    text-shadow: 1px 1px 2px black;
+}
+
+.hide {
+    display: none;
+
+     /*figure out transition for hover here or below*/ 
+}
+
+#dave-sara:hover + .hide {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-shadow: 1px 1px 2px black;
 }
 
 .section {
     text-align: left;
     padding: 20% 20% 20% 20%;
+}
+
+#container {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    background-color: rgb(156, 152, 152);
+}
+
+#myAnimation {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+#buttons {
+    text-align: center;
+}
+
+button {
+    background-color:#50B0E1;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 20%;
+    color: whitesmoke;
+    font-size: 20px;
+
+}
+
+button:hover {
+    background-color: darkblue;
+    border-width: thick;
+    border-color: whitesmoke;
+    cursor: pointer;
 }
