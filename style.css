@@ -89,7 +89,7 @@ nav a:hover::before {
 }
 
 #tagline h1 {
-    font-size: 80px;
+    font-size: 70px;
 }
 
 #tagline p {
@@ -100,8 +100,12 @@ nav a:hover::before {
 }
 
 .logo {
-    width: 20%;
+    width: 15%;
     position: absolute;
+}
+
+.logo:hover {
+    transform: scale(1.5);
 }
 
 #flatiron {
@@ -142,6 +146,10 @@ nav a:hover::before {
     text-shadow: 1px 1px 2px black;
 }
 
+.centered:hover {
+    color: #50B0E1;
+}
+
 .hide {
     display: none;
 
@@ -162,7 +170,7 @@ nav a:hover::before {
 
 .section {
     text-align: left;
-    padding: 20% 20% 20% 20%;
+    padding: 15% 20% 15% 20%;
 }
 
 #container {
@@ -170,12 +178,6 @@ nav a:hover::before {
     height: 400px;
     position: relative;
     background-color: rgb(156, 152, 152);
-}
-
-#myAnimation {
-    width: 200px;
-    height: 200px;
-    position: absolute;
 }
 
 #buttons {

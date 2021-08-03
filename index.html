@@ -94,13 +94,12 @@
 
 
 <!--JS won't work properly when linked from script.js-->
-            <script>
-
-        const up = document.getElementById('up');  
+            <script> 
           
         function addBanjo() {
             const banjo = document.createElement('img');
             banjo.src = "Banjo.JPG";
+            banjo.alt = "Dave playing Banjo"
             banjo.style.width = "400px";
             document.getElementById('buttons').appendChild(banjo);
         } 
@@ -108,6 +107,7 @@
         function addUltra() {
             const rocky = document.createElement('img');
             rocky.src = "Rocky-50.JPG";
+            rocky.alt ="Rocky 50 Miler"
             rocky.style.width = "400px";
             document.getElementById('buttons').appendChild(rocky);
         }
@@ -115,9 +115,9 @@
         function addMountains() {
             const middle = document.createElement('img');
             middle.src ="middle.jpeg";
+            middle.alt ="Middle Teton"
 // How can i add a link to image?...  middle.setAttribute("href", "https://www.strava.com/activities/5676545097");
-            middle.style.width="400px";
-
+            middle.style.width="400px"
             document.getElementById('buttons').appendChild(middle);
         }
             </script>
