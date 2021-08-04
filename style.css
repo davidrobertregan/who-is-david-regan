@@ -112,6 +112,10 @@ nav a:hover::before {
     width: 35%;
 }
 
+h3 {
+    font-weight: normal;
+}
+
 .section {
     padding: 20px 20px 20px 20px;
 }
@@ -180,6 +184,21 @@ nav a:hover::before {
     background-color: rgb(156, 152, 152);
 }
 
+#personality {
+    list-style-type: square;
+    line-height: 2;
+    margin: 5px;
+    padding: 25px;
+    word-spacing: 2px;
+    background-color: rgb(80, 176, 225, .5);
+    border-radius:25px;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: larger;
+}
+
 #buttons {
     text-align: center;
 }
@@ -188,7 +207,7 @@ button {
     background-color:#50B0E1;
     border: none;
     padding: 15px 15px;
-    border-radius: 20%;
+    border-radius: 25px;
     color: whitesmoke;
     font-size: 20px;
 
