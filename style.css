@@ -194,6 +194,11 @@ h3 {
     border-radius:25px;
 }
 
+#famous-person {
+    font-size: small;
+    float: right;
+}
+
 .bold {
     font-weight: bold;
     font-size: larger;
@@ -218,4 +223,10 @@ button:hover {
     border-width: thick;
     border-color: whitesmoke;
     cursor: pointer;
+}
+
+#button {
+    font-size: small;
+    position: absolute;
+    left: 50%;
 }

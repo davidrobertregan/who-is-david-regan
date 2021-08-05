@@ -85,7 +85,7 @@
         <ul id="personality">
             <li class="bold">Enneagram</li> 
                 <ul> 
-                    <li>Type Five (The Investigator)</li>
+                    <li>Type Five wing Four (The Investigator)<button id="famous-person">Somebody with same Enneagram</button></li>
                 </ul>
             <li class="bold">Kolbe Index</li>
                 <ul>
@@ -120,38 +120,14 @@
                 </button>
                 <button onclick="addMountains()">Mountains</button>
             <div></div>
-
-
-<!--JS won't work properly when linked from script.js-->
-            <script> 
-          
-        function addBanjo() {
-            const banjo = document.createElement('img');
-            banjo.src = "Banjo.JPG";
-            banjo.alt = "Dave playing Banjo"
-            banjo.style.width = "400px";
-            document.getElementById('buttons').appendChild(banjo);
-        } 
-
-        function addUltra() {
-            const rocky = document.createElement('img');
-            rocky.src = "Rocky-50.JPG";
-            rocky.alt ="Rocky 50 Miler"
-            rocky.style.width = "400px";
-            document.getElementById('buttons').appendChild(rocky);
-        }
-
-        function addMountains() {
-            const middle = document.createElement('img');
-            middle.src ="middle.jpeg";
-            middle.alt ="Middle Teton"
-// How can i add a link to image?...  middle.setAttribute("href", "https://www.strava.com/activities/5676545097");
-            middle.style.width="400px"
-            document.getElementById('buttons').appendChild(middle);
-        }
-            </script>
         </div>
     </div>
+
+    <div id="test"></div>
+
+    <button id="button">Say goodbye</button>
+
+<script src="script.js"></script>
 
 </body>
 
